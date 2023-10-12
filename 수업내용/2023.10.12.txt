@@ -1,0 +1,26 @@
+02_ex.html
+
+fontawesome cdn
+
+fontawesome.com
+
+fonts.google.com
+한글, 영어
+a1, roboto
+
+main 1400px 1600px
+
+웹 해상도
+반응형 사이트
+- 모, 탭, 노트, pc
+  320px 420px 760px 1200px 1400px 1600px 1920px
+
+----------------------------------------------------------------------------------------------------------
+
+tut04
+01_text.html
+- css
+- js
+- images
+
+02_blockInline.html
