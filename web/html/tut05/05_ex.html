@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 100px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    /*
+    메뉴  만드는 방법 : 3가지
+    1. display : flex; => 부모에 flex 설정
+    2. float : left; => 자식에 float -> 오류 -> 오류 제거
+    3. display: inline-block; => 자식에 inline-block
+
+    *** 인라인 타입 : a, span : 넓이 높이,  여백 지정에 문제 생길 수 있음 ***
+    */
+
+    /* shop.naver.com
+    m.shop.naver.com */
+    /* flex : 반응형  ->  1개 도메인(주소)가 여러 디바이스에서 보이도록 하는 것 */
+
+    ul { /* flex : 부모에 설정 */
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ol>li {
+      text-align: center;
+      float: left;
+    }
+
+    dl>dt {
+      display: inline-block;
+    }
+
+    ul>li {
+      background-color: #ff8282;
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+    
+    ul>li:hover {
+      background-color: red;
+      border-radius: 50px;
+      transition: 0.5s;
+    }
+
+    ul a {
+      /* 
+      메뉴 글자 코기는 보통 14px
+      단, 유틸리티 메뉴는 12px
+      */
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    ul a:hover {
+      color: #fff;
+      transition: 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="">Menu1</a></li>
+    <li><a href="">Menu2</a></li>
+    <li><a href="">Menu3</a></li>
+  </ul>
+  <br/>
+  <br/>
+  <ol>
+    <li><a href="">Menu1</a></li>
+    <li><a href="">Menu2</a></li>
+    <li><a href="">Menu3</a></li>
+  </ol>
+  <br/>
+  <br/>
+  <dl>
+    <dt><a href="">Menu1</a></dt>
+    <dt><a href="">Menu2</a></dt>
+    <dt><a href="">Menu3</a></dt>
+  </dl>
+</body>
+</html>
