@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>페이지 연습하기</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./css/reset.css" type="text/css" rel="stylesheet"/>
+  <style>
+    nav {
+      margin: 0 auto;
+      padding: 25px 0;
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .nav-left a {
+      margin-right: 40px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .nav-left a:hover {
+      text-decoration: underline;
+      color: blue;
+    }
+
+    hr {
+      border: none; /* 두 줄로 보임 -> 초기화후 값 설정 */
+      border-top: 1px solid #ccc;
+    }
+    
+    .nav-right>span {
+      font-weight: bold;
+    }
+
+    .nav-right>.tel2 {
+      color: rgb(102, 226, 216);
+      font-size: 20px;
+    }
+
+    .img-box {
+      margin: 20px auto;
+      width: 800px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      transition: 0.4s;
+    }
+
+    .img-box img:hover {
+      transform: scale(1.5);
+      transition: 0.4s;
+    }
+
+    .notice {
+      margin: 0 auto;
+      width: 1200px;
+    }
+    
+    .notice-title {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .notice-title h1 {
+      margin-bottom: 20px;
+      font-size: 35px;
+    }
+
+    .notice-table {
+      margin-top: 50px;
+    }
+
+    table tr {
+      text-align: center;
+      color: #555;
+    }
+
+    table tr:first-child {
+      color: #000;
+    }
+
+    table th {
+      padding: 20px 0;
+      font-size: 18px;
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #ccc;
+      background-color: rgb(243, 247, 251);
+    }
+
+    table td {
+      padding: 20px 0;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+    }
+    table td:nth-child(1) {
+      width: 10%;
+    }
+    table td:nth-child(2) {
+      width: 64%;
+      padding-left: 10px;
+      text-align: left;
+    }
+    table td:nth-child(3) {
+      width: 16%;
+    }
+    table td:nth-child(4) {
+      width: 10%;
+    }
+
+    tr:hover {
+      color:#000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <hr/>
+  <nav>
+    <div class="nav-left">
+      <a href="">아카데미 소개</a>
+      <a href="">IT 교육과정</a>
+      <a href="">자격증 취득과정</a>
+      <a href="">국비지원 과정</a>
+      <a href="">커뮤니티</a>
+    </div>
+    <div class="nav-right">
+      <span class="tel1">대표전화</span>
+      <span class="tel2">1588-5890</span>
+    </div>
+  </nav>
+  <hr/>
+
+  <main>
+    <section class="bg-img">
+      <div class="img-box">
+        <img src="./images/img1.jpg" alt="메인이미지">
+      </div>
+    </section>
+    <section class="notice">
+      <div class="notice-title">
+        <h1>공지사항</h1>
+        <p>코리아아이티 아카데미 공지사항입니다.</p>
+      </div>
+      <div class="notice-table">
+        <table>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성일</th>
+            <th>조회수</th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>새학기에도 계속된다!</td>
+            <td>2023.10.17</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>특별한 국비지원 100%</td>
+            <td>2023.10.06</td>
+            <td>5</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
