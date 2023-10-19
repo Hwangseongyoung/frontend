@@ -1,0 +1,17 @@
+폰트, 폰트어썸
+기본 스타일 제거
+unsplash.com -> raw(5000px)
+notice
+
+tut06
+03_ex.html
+
+--------------------------------------------------------------------------------------------
+
+mspaint
+
+header > nav
+
+main > section >article
+
+footer > copyright
