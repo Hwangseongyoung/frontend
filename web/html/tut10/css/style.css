@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: url(../images/bg.jpg) 0 50% no-repeat; */
+  background-size: cover;
+  width: 1920px;
+  height: 500px;
+}
+
+.content-wrap {
+  margin: 0 auto;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  /* flex에서 세로 정렬은 높이 값 있어야함 */
+  /* 세로 정렬을 위한 자식 사각형(block타입)은 하나만 있어야함 */
+  align-items: center;
+}
+ 
+.content {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 600px;
+  padding: 20px 10px;
+  text-shadow: 0 5px 30px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: blue;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

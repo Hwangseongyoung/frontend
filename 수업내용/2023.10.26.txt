@@ -1,0 +1,15 @@
+tut10
+- css
+- images
+01_ex_clrs.html
+
+색상 #16진수(0 ~ 9, A B C D E F)
+r  g  b 빛의 3원색 모두를 섞으면 흰색
+0  0  0
+
+rgba a는 색을 투명도 처리(0 ~ 1)
+
+red, green, blue, skyblue...
+
+
+02_ex_bg.html
