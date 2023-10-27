@@ -1,0 +1,9 @@
+ex01
+website.html
+- images
+- css : style.css
+
+fonts.google.com : roboto mono
+
+unslash.com : outdoors
+fontawesome cdn : google facebook icon
