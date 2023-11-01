@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>classList.toggle("클래스명")</title>
+  <style>
+    .hide {
+      display: none;
+    }
+
+    img {
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="./images/펫소시크_Tiny-dog-collar강아지반다나-Mimi-Mini_thumb002.jpg" alt="강아지" />
+  </div>
+  <button>Toggle 예제(버튼 하나로 보임/숨김)</button>
+
+  <script>
+    function toggleImg() {
+      document.querySelector(".box img").classList.toggle("hide");
+    }
+    document.querySelector("button").onclick = toggleImg;
+  </script>
+</body>
+</html>

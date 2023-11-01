@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    /* 숨기기 */
+    /* p {
+      visibility: hidden;
+      display: none;
+    } */
+  </style>
+</head>
+<body>
+  <body>
+    <h1>코리아아이티 아카데미</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, expedita?</p>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+
+    <script>
+      // 개체
+      let pr = document.querySelector("p");
+      let btn1 = document.querySelector(".hide");
+      let btn2 = document.querySelector(".show");
+
+      // function hide() {
+      //   pr.style.display = "none";
+      // }
+      
+      function show() {
+        pr.style.display = "block";
+      }
+
+      // btn1.onclick = hide;
+      // btn2.onclick = show;
+
+      btn1.onclick = () => {
+        pr.style.display = "none";
+      }
+
+      btn2.addEventListener('click', show);
+    </script>
+  </body>
+</body>
+</html>

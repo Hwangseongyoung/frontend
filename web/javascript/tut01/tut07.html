@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 바꾸기</title>
+  <style>
+    .box {
+      width: 500px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="./images/5bddba7b6574b95d37b6079c199d7101.jpg" alt="강아지1" />
+  </div>
+  <button>이미지 바꾸기</button>
+
+  <script>
+    let img = document.querySelector(".box img");
+    let btn = document.querySelector("button");
+
+    function changeImg() {
+      img.src = "./images/펫소시크_Tiny-dog-collar강아지반다나-Mimi-Mini_thumb002.jpg";
+    }
+    btn.onclick = changeImg;
+  </script>
+</body>
+</html>
