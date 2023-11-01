@@ -14,3 +14,13 @@ get
 <p>코리아아이티</p>
 
 add
+
+flex_ex06.html
+flex-grow
+
+flex_ex07.html
+flex-shrink
+
+pc -> 모바일 줄일 때
+
+화면을 모바일 -> pc : 무조건 화면을 가득채워야함
