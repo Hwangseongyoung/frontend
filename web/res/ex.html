@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내비바</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .header-wrap {
+      margin: 0 auto;
+      width: 1200px;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .users {
+      display: flex;
+      justify-content: right;
+    }
+
+    .users>li {
+      margin-right: 10px;
+    }
+
+    .users>li:last-child {
+      margin-right: 0;
+    }
+
+    .category {
+      display: flex;
+      margin: 10px 0;
+    }
+
+    .category>li {
+      font-size: 25px;
+      margin-right: 40px;
+      padding-bottom: 26px;
+    }
+
+    .category>li:last-child {
+      margin-right: 0;
+    }
+
+    .category>li:hover {
+      border-bottom: 1px solid rgb(49, 77, 119);
+    }
+
+    .sub-menu-wrap {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .sub-menu-intro li{
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      background-color: #eee;
+      border: 1px solid #555;
+      position: relative;
+      left: 50%;
+      top: -5px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="header-wrap">
+    <header>
+      <h1 class="logo">logo</h1>
+      <nav>
+        <ul class="users">
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+        <ul class="category">
+          <li><a class="intro" href="">객실소개</a></li>
+          <li><a href="">객실안내</a></li>
+          <li><a href="">예약</a></li>
+          <li><a href="">부대시설</a></li>
+          <li><a href="">커뮤니티</a></li>
+        </ul>
+      </nav>
+    </header>
+  </ul>
+  <div class="sub-menu-wrap">
+    <ul class="sub-menu-intro">
+      <li>A동</li>
+      <li>B동</li>
+    </ul>
+  </div>
+
+  <script>
+    document.querySelector("intro").addEventListener('mouseover', function(e) {
+      e.preventDefault();
+      document.querySelector(".sub-menu-intro li").style.display = "block";
+    });
+  </script>
+</body>
+</html>

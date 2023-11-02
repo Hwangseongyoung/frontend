@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle 예제</title>
+  <style>
+    .box {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .dark {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    Item 1
+  </div>
+  <button>Box Color Change</button>
+
+  <script>
+    function togglebtn() {
+      document.querySelector(".box").classList.toggle("dark");
+    }
+
+    document.querySelector("button").addEventListener('click', togglebtn);
+  </script>
+</body>
+</html>
