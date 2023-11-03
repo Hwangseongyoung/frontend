@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Main</title>
+  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+  <style>
+    header {
+      background-color: #245de7;
+      height: 450px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    
+    .bg-wrap {
+      display: flex;
+      align-items: center;
+      height: 450px;
+    }
+    
+    .bg-content {
+      color: #fff;
+      width: 50%;
+    }
+
+    .bg-content h1 {
+      font-size: 50px;
+    }
+
+    .bg-content p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    .box-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box {
+      width: 415px;
+      padding: 20px;
+      background-color: #245de7;
+      color: #fff;
+    }
+
+    .box h2 {
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    @media (max-width:800px) {
+      header {
+        height: 600px;
+      }
+
+      .container {
+        max-width: 100%;
+      }
+    
+      .bg-wrap {
+        height: 600px;
+        justify-content: center;
+      }
+      
+      .bg-content {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .bg-content h1 {
+        font-size: 60px;
+      }
+
+      .bg-content p {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      section {
+        padding: 20px 0;
+      }
+
+      .box-wrap {
+        display: block;
+      }
+
+      .box {
+        width: 100%;
+      }
+
+      .box:nth-child(2) {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="bg-wrap">
+        <div class="bg-content">
+          <h1>Korea IT Academy</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quas dolorem maiores dolores neque sapiente repellat cum est adipisci ipsum.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section>
+        <div class="box-wrap">
+          <div class="box">
+            <h2>Spring Framework</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus consequatur, sint alias tempore maiores.</P>
+          </div>
+          <div class="box">
+            <h2>FrontEnd Design</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus consequatur, sint alias tempore maiores.</P>
+          </div>
+          <div class="box">
+            <h2>Javascript Library</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus consequatur, sint alias tempore maiores.</P>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

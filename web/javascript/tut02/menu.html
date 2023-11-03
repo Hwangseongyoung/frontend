@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu>li>a {
+      line-height: 80px;
+    }
+    .menu>li {
+      height: 80px;
+      border: 1px solid tomato;
+    }
+
+    .sub {
+      display: none;
+    }
+
+    .sub>li {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul class="menu">
+      <li class="menu1">
+        <a href="">menu1</a>
+        <ul class="sub">
+          <li><a href="">sub1</a></li>
+          <li><a href="">sub2</a></li>
+          <li><a href="">sub3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">menu2</a>
+      </li>
+      <li>
+        <a href="">menu3</a>
+      </li>
+      <li>
+        <a href="">menu4</a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    document.querySelector(".menu1").addEventListener('mouseover', function(e) {
+      e.preventDefault();
+
+      document.querySelector(".sub").style.display = "block";
+    });
+
+    document.querySelector(".menu1").addEventListener('mouseleave', function(e) {
+      e.preventDefault();
+
+      document.querySelector(".sub").style.display = "none";
+    });
+  </script>
+</body>
+</html>
