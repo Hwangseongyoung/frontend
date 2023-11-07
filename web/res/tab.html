@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tab menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .tab_menu_wrap {
+      width: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tab_menu {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .btn {
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .show_area {
+      width: 500px;
+      height: 500px;
+      background-color: aqua;
+    }
+
+    .cont {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab_menu_wrap">
+    <ul class="tab_menu">
+      <li class="is_on"><a href="#tab1" class="btn">tab1</a></li>
+      <li><a href="#tab2" class="btn">tab2</a></li>
+      <li><a href="#tab3" class="btn">tab3</a></li>
+    </ul>
+
+    <div class="show_area">
+      <div id="tab1" class="cont">
+        tab1
+      </div>
+      <div id="tab2" class="cont">
+        tab2
+      </div>
+      <div id="tab3" class="cont">
+        tab3
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let tablist = document.querySelectorAll(".tab_menu li");
+    let contents = document.querySelectorAll(".cont");
+    let activeCont = "";
+
+    for(let i=0;i<tablist.length;i++){
+      tablist[i].querySelector(".btn").addEventListener('click', function(e) {
+        e.preventDefault();
+        
+      })
+    }
+  </script>
+</body>
+</html>

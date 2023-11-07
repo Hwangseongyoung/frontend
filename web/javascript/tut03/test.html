@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .show {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      transition: 2s;
+      visibility: hidden;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .na {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+    }
+
+    .action {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <button>보이기</button>
+  <div class="show">
+
+  </div>
+
+  <div class="na"></div>
+  <script>
+    document.querySelector("button").addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(".show").classList.toggle("action");
+    })
+  </script>
+</body>
+</html>

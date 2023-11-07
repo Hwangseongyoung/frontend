@@ -10,9 +10,97 @@
     h4::after {
       content: '';
       width: 50px;
-      height: 1px;
+      height: 2px;
       background-color: #e91e63;
       display: block;
+      margin-top: 10px;
+    }
+
+    footer {
+      padding: 80px 0;
+      background-color: #24262b;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .flex-wrap {
+      display: flex;
+    }
+
+    .footer-item {
+      width: 25%;
+    }
+
+    .footer-item h4 {
+      color: #fff;
+      font-weight: normal;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+    }
+
+    .footer-item a {
+      color: #fff;
+      font-size: 16px;
+      text-transform: capitalize;
+      font-weight: lighter;
+      transition: all 0.3s ease;
+    }
+
+    .footer-item a:hover {
+      padding-left: 8px;
+    }
+
+    .social-wrap a {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: inline-block;
+      text-align: center;
+      
+      /* 세로정렬 : flex, 줄간격 line-height(자식 1개만)
+      line-height 값은 높이 값과 동일 */
+      line-height: 40px;
+    }
+
+    .social-wrap a:hover {
+      padding-left: 0;
+      background-color: #fff;
+      color: #24262b;
+    }
+
+    @media (max-width:600px) {
+      .flex-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-item {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .footer-item h4 {
+        position: relative;
+      }
+      
+      h4::after {
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        transform: translateX(-50%);
+      }
+
+      .footer-item:not(:last-child) {
+        margin-bottom: 50px;
+      }
     }
   </style>
 </head>
